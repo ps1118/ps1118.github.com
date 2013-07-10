@@ -6,17 +6,24 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 pygments: true
 
+paginate: 5
+
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
+title : Ps' Personal Blog
 tagline: Site Tagline
+page : 
+  previous : 上一篇
+  next : 下一篇
+  return : 返回
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
+  name : Peng Jianlin
+  email : sgjianlin@gmail.com
+  github : ps1118
   twitter : username
   feedburner : feedname
+  sina : 彭少suddenly
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

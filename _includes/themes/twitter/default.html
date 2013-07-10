@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -30,6 +30,9 @@
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
+    <!-- highlight css-->
+    <link href="{{ ASSET_PATH }}/plugin/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
+
   </head>
 
   <body>
@@ -53,14 +56,23 @@
       </div>
       <hr>
       <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        <p>&copy; {{ site.time | date: '%Y' }} <a href="http://weibo.com/sgjianlin" target="_blank">{{ site.author.sina }}</a>
+          with help from <a href="www.github.com" target="_blank">Github</a> & 
+          <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          & <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
 
     </div>
 
     {% include JB/analytics %}
+    <!-- highlight js-->
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/plugin/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        window.prettyPrint && prettyPrint();
+      });
+    </script>
   </body>
 </html>

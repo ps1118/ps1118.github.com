@@ -1,0 +1,47 @@
+---
+layout: page
+title: 
+tagline: 
+---
+{% include JB/setup %}
+
+<div class="row-fluid">
+  <div class="span8">
+    {% for post in site.posts %}
+    {% assign content = post.content %}
+    <section id="{{ post.url | replace:'/',''}}">
+      <article>
+        <header>
+        <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="date"><a href="http://weibo.com/sgjianlin">{{ site.author.name }}</a> 发表于 <span>{{ post.date | date:"%Y-%m-%d" }}</span></div>
+      </header>
+      <div class="content">{{ post.abstract }}....<a href="{{ BASE_PATH }}{{ post.url }}"> 阅读全文</a></div>
+      </article>
+    </section>
+  {% endfor %}
+  </div>
+  <aside class="span4">
+    <section>
+      <h4>最近发表</h4>
+      <ul id="recent_posts">{% for rpost in site.posts limit: 10 %}
+        <li class="post">
+          <a href="{{ BASE_PATH }}{{ rpost.url }}">{{ rpost.title }}</a>
+        </li>{% endfor %}
+      </ul>
+    </section>
+    <section>
+      <h4>手绘头像</h4>
+      <div class="myintroduceImg">
+      </div>
+      <div class="myintroduceText">
+        QQ：398968940<br/>
+        新浪微博：<a href="http://weibo.com/sgjianlin">http://weibo.com/sgjianlin</a><br/>
+        Email：sgjianlin@gmail.com<br/>
+      </div>
+    </section>
+    <section>
+      <h4>一首最爱的歌</h4>
+      <audio autoplay controls class="downJW" src="down.mp3">A song from Jason Walker.</audio>
+    </section>
+  </aside>
+</div>
