@@ -32,6 +32,7 @@
 
     <!-- highlight css-->
     <link href="{{ ASSET_PATH }}/plugin/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/plugin/autoscroll/css/scroll.css" rel="stylesheet" type="text/css" media="all">
 
   </head>
 
@@ -51,7 +52,7 @@
 
     <div class="container-narrow">
 
-      <div class="content">
+      <div class="content maincontent">
         {{ content }}
       </div>
       <hr>
@@ -65,10 +66,16 @@
 
     </div>
 
+    <div id="autotopshangxia">
+      <div id="autotopshang"></div>
+      <div id="autotopxia"></div>
+    </div>
+
     {% include JB/analytics %}
     <!-- highlight js-->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/plugin/google-code-prettify/prettify.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/plugin/autoscroll/js/autotop.js"></script>
     <script type="text/javascript">
       $(function(){
         window.prettyPrint && prettyPrint();

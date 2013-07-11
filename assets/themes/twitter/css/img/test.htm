@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			height:2000px;
+		}
+		#autotopshangxia{
+			position: fixed;
+			top: 65%;
+			right: 50%;
+			display: block;
+			margin-right: -520px;
+			z-index: 9999;
+		}
+		#autotopshang,#autotopxia{
+			background: url(scroll.png) no-repeat;
+			position: relative;
+			cursor: pointer;
+			height: 25px;
+			width: 29px;
+			margin: 10px 0 0;
+		}
+		#autotopxia{
+			background-position: left -68px;
+		}
+		#autotopshang:hover{
+			background-position:right 0;
+		}
+		#autotopxia:hover{
+			background-position:right -68px;
+		}
+	</style>
+</head>
+<body>
+	<div id="autotopshangxia">
+		<div id="autotopshang"></div>
+		<div id="autotopxia"></div>
+	</div>
+	<script src="jquery-1.7.1.min.js"></script>
+	<script src="autotop.js"></script>
+</body>
+</html>

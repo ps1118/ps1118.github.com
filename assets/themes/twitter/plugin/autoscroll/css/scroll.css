@@ -1,0 +1,25 @@
+/* auto scroll */
+#autotopshangxia{
+  position: fixed;
+  bottom: 15%;
+  right: 14%;
+  display: block;
+  z-index: 9999;
+}
+#autotopshang,#autotopxia{
+  background: url(img/scroll.png) no-repeat;
+  position: relative;
+  cursor: pointer;
+  height: 25px;
+  width: 29px;
+  margin: 10px 0 0;
+}
+#autotopxia{
+  background-position: left -68px;
+}
+#autotopshang:hover{
+  background-position:right 0;
+}
+#autotopxia:hover{
+  background-position:right -68px;
+}
