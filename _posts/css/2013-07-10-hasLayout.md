@@ -1,7 +1,8 @@
 ---
 layout: post
 category : css
-tagline: 
+tagline : 
+tags : [css,layout,ie]
 abstract : hasLayout是IE下的一个专有概念（属性），它决定一个元素是否拥有一个布局。它并不是一个CSS属性，所以不能显示的对它设置true或false。一个拥有布局的元素负责它自己及其子元素的尺寸和定位，没有布局的元素由其拥有布局的祖先元素负责。当一个元素拥有布局时，就称它has layout（hasLayout为true）。hasLayout在IE8标准模式中被移除。
 
 ---

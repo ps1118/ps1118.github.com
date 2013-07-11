@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -76,10 +76,6 @@
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/plugin/google-code-prettify/prettify.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/plugin/autoscroll/js/autotop.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        window.prettyPrint && prettyPrint();
-      });
-    </script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/common.js"></script>
   </body>
 </html>

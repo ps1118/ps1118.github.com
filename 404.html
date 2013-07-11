@@ -1,6 +1,27 @@
-Sorry this page does not exist =(
-
-
-
-cd ps1118.github.com
-jekyll server
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>404</title>
+	<link rel="stylesheet" href="assets/themes/twitter/css/404.css">
+</head>
+<body>
+	<div class="notfound">
+	</div>
+	<div class="command">
+		cd ps1118.github.com
+		jekyll server
+	</div>
+	<script src="assets/themes/twitter/js/jquery-1.7.1.min.js"></script>
+	<script>
+		function dynamicBG(){
+			var randNum = Math.floor(Math.random()*3+1);
+			$('.notfound').css('background-image','url(assets/themes/twitter/css/img/404-'+randNum+'.png)');
+			setTimeout('dynamicBG()',2000);
+		}
+		$(function(){
+			dynamicBG();
+		});
+	</script>
+</body>
+</html>
