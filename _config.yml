@@ -83,7 +83,7 @@ JB :
   #
   archive_path: /time.html
   categories_path : /xcategories.html
-  tags_path : /tags.html
+  tags_path : /xags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
 
