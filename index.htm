@@ -22,7 +22,7 @@ tagline:
         {% endunless %}
         <div class="date"><a href="http://weibo.com/sgjianlin">{{ site.author.name }}</a> 发表于 <span>{{ post.date | date:"%Y-%m-%d" }}</span></div>
       </header>
-      <div class="content">{{ post.abstract }}....<a href="{{ BASE_PATH }}{{ post.url }}"> 阅读全文 >></a></div>
+      <div class="content previewBlog">{{ post.abstract }}....<a href="{{ BASE_PATH }}{{ post.url }}"> 阅读全文 >></a></div>
       </article>
     </section>
   {% endfor %}
