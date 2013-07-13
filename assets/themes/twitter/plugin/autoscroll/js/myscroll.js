@@ -10,18 +10,17 @@ window.onload=function(){
 	var upClickable   = true,
 		downClickable = true;
     downscroll.onclick = function(){
-    	if(downClickable && upClickable){
-        	var down=setInterval(function(){
+        if(downClickable && upClickable){
+            var down=setInterval(function(){
                 downClickable = false;
-                var s=max_height-window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0;
-                console.log(s,window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0)
-                if(s<=1){
+                var s=max_height-(window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0)-1;
+                if(s<=0){
                     clearInterval(down);
                     downClickable = true;
                 }
                 window.scrollTo(0,max_height-s+Math.ceil(s/8));
             },30);
-    	}else{}
+        }else{}
     };
     topscroll.onclick = function(){
     	if(upClickable && downClickable){
