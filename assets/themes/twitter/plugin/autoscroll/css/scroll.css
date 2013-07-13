@@ -1,12 +1,12 @@
 /* auto scroll */
-#autotopshangxia{
+#autoscroll{
   position: fixed;
   bottom: 15%;
   right: 14%;
   display: block;
   z-index: 9999;
 }
-#autotopshang,#autotopxia{
+#autoscrolltop,#autoscrolldown{
   background: url(img/scroll.png) no-repeat;
   position: relative;
   cursor: pointer;
@@ -14,12 +14,12 @@
   width: 29px;
   margin: 10px 0 0;
 }
-#autotopxia{
+#autoscrolldown{
   background-position: left -68px;
 }
-#autotopshang:hover{
+#autoscrolltop:hover{
   background-position:right 0;
 }
-#autotopxia:hover{
+#autoscrolldown:hover{
   background-position:right -68px;
 }

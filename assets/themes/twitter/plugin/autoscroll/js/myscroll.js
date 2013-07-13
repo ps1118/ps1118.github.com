@@ -5,8 +5,8 @@ window.onload=function(){
 		max_height = window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0;
         window.scroll(0,0);
 	}
-	var topscroll  = document.getElementById('autotopshang');
-		downscroll = document.getElementById('autotopxia');
+	var topscroll  = document.getElementById('autoscrolltop');
+		downscroll = document.getElementById('autoscrolldown');
 	var upClickable   = true,
 		downClickable = true;
     downscroll.onclick = function(){
