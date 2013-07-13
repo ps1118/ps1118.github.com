@@ -1,8 +1,8 @@
 $(function(){
 	window.prettyPrint && prettyPrint();
 	if(document.documentElement.clientHeight < document.body.offsetHeight){
-		$('#autotopshangxia').show();
+		$('#autoscrolltop').show();
 	}else{
-		$('#autotopshangxia').hide();
+		$('#autoscrolldown').hide();
 	}
 });
