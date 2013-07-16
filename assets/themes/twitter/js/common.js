@@ -1,8 +1,8 @@
 $(function(){
 	window.prettyPrint && prettyPrint();
 	if(document.documentElement.clientHeight < document.body.offsetHeight){
-		$('#autoscrolltop').show();
+		$('#autoscroll').show();
 	}else{
-		$('#autoscrolldown').hide();
+		$('#autoscroll').hide();
 	}
 });
